@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/gaming.png">
+  <title> TCC programação </title>
+  <link rel="stylesheet" href="inicial.css">
+  <script src="script.js" defer></script>
+  <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <img class="logotipo" src="img/seilabroh.png">
+        <h1> ENTRETENIMENTO & JOGOS </h1>
+        <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+            <label class="label" for="toggle-dark">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+    </header>
+    <hr class="hr-header">
+
+    <!-- Apresentação -->
+
+    <article class="apresentacao">
+        <section>
+            <div class="curiosidades"><p class="titulo-c">Você Sabia!?</p></div></div>
+            <div class="bloco-c">
+                <img src="img/nostromo.jpg">
+                <div class="baixoEsquerda"><p class="texto-c"> Nostromo foi o primeiro jogo de terror de sobrevivência, desenvolvido por um estudante universitário japonês, Akira Takiguchi, e inspirado por Alien, Nostromo envolveu um jogador tentando escapar de uma nave espacial que havia sido abordada por um alienígena. <br><br>
+                O alienígena era invisível e só apareceria quando o jogador estivesse perto. Era um jogo bastante obtuso, exigindo que o jogador coletasse certos itens para completá-lo. Se você chegou ao final sem os itens necessários, azar, você está morto.</p></div>
+            </div>
+        </section>
+        </article>
+
+    <!-- menu de navegação -->
+    <center>
+        <section class="fundo">
+    <div class="navi o">
+       <button class="hs"><a href="terror.html"> Horror Survival </a></button>
+       <p class="pn"> A ideia de experiências mais emersivas, aterrorizantes... </p>
+       <img class="nave" src="https://64.media.tumblr.com/f3d95e8f68d77cfcedbbdef83e1be6b9/e2c3d1d4565c8616-52/s1280x1920/20a4e11dfb1421582b65cab458efc6ca3dd94727.png">
+    </div>
+    <div class="navi o">
+        <button class="hs"><a href="battleroyale.html"> Battle Royale </a></button>
+        <p class="pn"> Os jogos eletrônicos que misturam elementos de sobrevivência... </p>
+       <img class="nave" src="https://i.pinimg.com/originals/99/2b/e8/992be8563d395e79dfbd6416413e947b.jpg">
+    </div>
+    <div class="navi o">
+       <button class="hs"><a href="rpg.html"> Role-Playing </a></button>
+       <p class="pn"> Os jogadores assumem o papel de personagens imaginários... </p>
+       <img class="nave" src="https://i.pinimg.com/originals/f9/49/b9/f949b99e24c813e2860a1179a00eaa46.png">
+    </div>
+    </center>
+</section>
+
+</body>
+</html>

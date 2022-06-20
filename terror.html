@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="terror.css">
+    <title>Document</title>
+    
+    <script src="script.js" defer></script>
+  <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+  <!-- JQUERY DIV MOSTRAR/OCULTAR -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('section#content article button.otl').click(function(){
+          $(this).siblings('p.bx').slideToggle();
+       });
+    });
+  </script>
+</head>
+<body> 
+ <!-- MENU DE NAVEGAÇÃO -->
+    <center>
+      <hr class="icc">
+        <header class="fundo">
+          <div class="box">
+              <nav class="btn">
+                <span><a class="cool-link" href="index.html"> INÍCIO </a></span>
+              </nav>
+            </div>
+          <div class="box">
+              <nav class="btn btn-td">
+                <span><a class="cool-link" href="terror.html"> HORROR SURVIVAL </a></span>
+              </nav>
+          </div>
+          <div class="ic"></div>
+          <div class="box">
+            <nav class="btn btn-td">
+              <span><a class="cool-link" href="battleroyale.html"> BATTLE ROYALE </a></span>
+            </nav>
+          </div>
+          <div class="box">
+            <nav class="btn btn-td">
+              <span><a class="cool-link" href="rpg.html"> ROLE-PLAYING </a></span>
+            </nav>
+          </div>
+          <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+        <label class="label" for="toggle-dark">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <div class="ball"></div>
+          </label>
+          </header>
+        </center>
+
+        <div class="c-heroImageGrid">
+          <div class="container">
+            <div class="column"></div>
+            <div class="column">
+              <div class="row"></div>
+              <div class="row">
+                <div>
+                  <div class="text">
+                    <h6>
+                      SURVIVAL HORROR
+                    </h6>
+                    <p class="introducao">
+                      O genêro de terror sempre esteve presente em outras áreas da arte e isso não seria diferente com os jogos. A ideia de experiências mais emersivas, aterrorizantes e com efeitos sonoros assustadores são características de games de terror, porém o objetivo de resolver algum puzzle enquanto o jogador é caçado por um monstro mortal, é um aspecto do Surival Horror.
+                    </p>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+
+<!-- NOTÍCIAS -->
+<article class="noticiario">
+    <div class="bloco">
+      <hr class="one">
+    <h2 class="tnt"> NOTÍCIAS E ÚLTIMAS ATUALIZAÇÕES </h2>
+      <hr class="two">
+    <br><br>
+    <center>
+        <div class="noticia">
+            <img class="nimg" src="imgterror/TheOutlastTrials.webp">
+            <br><br>
+            <a href="https://meups.com.br/noticias/the-outlast-trials-playstation-5-red-barrels/#:~:text=Para%20ele%2C%20a%20grande%20novidade,para%20a%20liberdade%20ser%C3%A1%20longa."><p class="nt"> o estúdio confirmou a existência de uma versão de Outlast para PS5 </p></a>
+        </div>
+        <div class="noticia">
+            <img class="nimg" src="https://sm.ign.com/t/ign_pl/news/u/until-dawn/until-dawn-rush-of-blood-officially-announced_dye8.h720.jpg">
+            <br><br>
+            <a href="https://meups.com.br/noticias/remake-de-until-dawn-em-desenvolvimento/#:~:text=Segundo%20rumores%20recentes%2C%20parece%20que,no%20The%20Game%20Awards%202021."><p class="nt"> Supermassive Games está trabalhando no remake do jogo para a geração atual </p></a>
+        </div>
+        <div class="noticia">
+            <img class="nimg" src="https://escutai.com/wp-content/uploads/2019/07/Man-of-Made.jpg">
+            <br><br>
+            <a href="https://meups.com.br/noticias/until-dawn-2-estudio-explica-porque-decidiu-nao-fazer-o-game-entenda/"><p class="nt"> Produtora de Until Dawn desenvolverá Man of Medan
+                ao invés de continuar com a saga </p></a>
+        </div>
+      </center>
+    </div>
+</article> 
+
+<!-- SESSÃO LITTLE NIGHTMARES -->
+
+<section id="content">
+<article>
+  <div class="bloco1">
+    <img class="banner1" src="imgterror/2k2IWr1LNL9amWwqDBm0plXMLyUV9I2fLKf6HGl0crs.webp">
+  </div>
+
+  <h3 class="titulo"> Little Nightmares </h3>
+
+  <div class="descricao">
+      <p> Criado pela Tarsier Studios e lançado pela Bandai Namco Entertainment em 2017, Little Nightmares traz quebra-cabeças e terror juntos enquanto te deixa curioso sobre a história. </p>
+  </div>
+
+  <button id="ntm" class="otl"> Saiba Mais </button>
+  <button class="nm"><a href="https://en.bandainamcoent.eu/little-nightmares/little-nightmares"> Site Oficial </a></button>
+
+      <p class="bx">A personagem, chamada de Six pelo fandom, acorda num lugar desconhecido, com fome e tem apenas seu isqueiro como fonte de luz para se guiar. Conforme vai andando, percebe que está em um navio com crianças feitas de prisioneiras e um zelador que tenta pegar a garota mas é impedido por ela. Com medo, confusa e muito faminta, Six, precisa se alimentar e escapar desse lugar, e você é quem vai ajudá-la com isso. </p>
+</article>
+</section>
+
+
+<section id="content">
+<article>
+  <div class="bloco1">
+    <img class="banner1" src="https://screenshots.gamerinfo.net/outlast/106827.jpg">
+  </div>
+
+  <h3 class="titulo">Outlast (2013)</h3>
+
+  <div class="descricao">
+    <p> Desenvolvido e publicado em 4 de setembro de 2013 pela Red Barrels, Outlast é um jogo de survival horror que se passa no manicômio de Monte Massive cujo objetivo é sobreviver. </p>
+  </div>
+
+  <button id="otl" class="otl"> Saiba Mais </button>
+  <button class="ol"> <a href="https://store.steampowered.com/app/238320/Outlast/"> Site Oficial </a> </button>
+
+  <p class="bx">Baseado em fatos reais, que envolvem as operações da CIA, a história começa no hospício de Monte Massive, onde a empresa fictícia Murkoff fazia experimentos ilegias em humanos, enquanto se passava por um local de ajuda e caridade. O jogador assume o papel do jornalista investigativo Miles Upshur, que invade o lugar para saber o que se passa lá dentro. Ao entrar no prédio, Milles encontra vários cadáveres de prisioneiros e soldados no que parecia ter sido uma rebelião de pacientes. Logo ele se vê trancado, tendo como objetivo, não apenas descobrir o que aconteceu mas também fugir desse lugar macabro que não parece estar tão vazio assim.</p>
+</article>
+</section>
+
+
+<section id="content">
+<article>
+  <div class="bloco1">
+  <img class="banner1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10a2807f-6444-4dd4-bf00-ca0105c36baf/d9eqwac-c0026063-ad75-4dc2-b10c-c228b4275ac0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEwYTI4MDdmLTY0NDQtNGRkNC1iZjAwLWNhMDEwNWMzNmJhZlwvZDllcXdhYy1jMDAyNjA2My1hZDc1LTRkYzItYjEwYy1jMjI4YjQyNzVhYzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SJJ-dr226Oshs_mW5fKwZqfRUqoV-keZ8gNaoFj9eeo">
+  </div>
+
+  <h3 class="titulo">Until Dawn</h3>
+
+  <div class="descricao">
+    <p> Until Dawn é um jogo de terror e sobrevivência, desenvolvido pela Supermassive Games e publicado pela Sony em 4 de agosto de 2015. </p>
+  </div>
+
+  <button id="und" class="otl"> Saiba Mais </button>
+  <button class="ud"> <a href="https://www.supermassivegames.com/games/until-dawn">Site Oficial</a> </button>
+
+   <p class="bx">Tudo começa quando os irmãos Josh, Hannah e Beth, vão passar uns dias no chalé de seus pais, localizado na Montanha Blackwood. A noite corria bem, Josh estava bêbado e dormia no balcão acompanhado por Chris, enquanto os outros  planejavam pregar uma peça em Hannah, por causa de sua paixão em Mike. Tudo dá errado, Hannah sai da segurança do chalé e Beth vai atrás de sua irmã, sem se importar com o frio e a nevasca da montanha, e assim elas nunca mais foram vistas. Agora, um ano depois da tragédia, todos voltam para a Montanha Blackwood para apoiar Josh nesse momento difícil, entretanto a noite seria muito mais conturbada do que imaginavam e se eles vão sair vivos ou não, é decisão sua.</p></div>
+  </article>
+  </section>
+
+</body>
+</html>

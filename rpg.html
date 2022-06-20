@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="rpg.css">
+    <title> TCC PROGRAMAÇÃO </title>
+
+    <script src="script.js" defer></script>
+  <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('section#content article button.btt').click(function(){
+        $(this).siblings('p.bx').slideToggle();
+     });
+  });
+</script>  
+</head>
+<body>
+
+<!-- Cabeçalho + Menu de Navegação -->
+
+<center>
+<header class="fundo">
+  <hr class="icc">
+  <div class="box">
+      <nav class="btn btn-td">
+        <span><a class="cool-link" href="index.html"> INÍCIO </a></span>
+      </nav>
+    </div>
+    <div class="box">
+      <nav class="btn btn-td">
+        <span><a class="cool-link" href="terror.html"> HORROR SURVIVAL </a></span>
+      </nav>
+    </div>
+    <div class="ic"></div>
+    <div class="box">
+      <nav class="btn btn-td">
+        <span><a class="cool-link" href="battleroyale.html"> BATTLE ROYALE </a></span>
+      </nav>
+    </div>
+    <div class="box">
+      <nav class="btn btn-td">
+        <span><a class="cool-link" href="rpg.html"> ROLE-PLAYING </a></span>
+    </nav>
+  </div>
+  <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+  <label class="label" for="toggle-dark">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+    <div class="ball"></div>
+    </label>
+  </header>
+</center>
+
+  <!-- Sessão de Imagens -->
+
+  <div class="c-heroImageGrid">
+    <div class="container">
+      <div class="column"></div>
+      <div class="column">
+        <div class="row"></div>
+        <div class="row">
+          <div>
+            <div class="text">
+              <h6>
+                ROLE-PLAYING GAME
+              </h6>
+              <p class="introducao">
+                RPG é a sigla em inglês para role-playing game, um gênero de jogo no qual os jogadores assumem o papel de personagens imaginários, em um mundo fictício. Os jogos de RPG podem ser jogados de diversas formas.
+              </p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breve Descrição de Gênero -->
+  <div class="desc"></div>
+
+
+<!-- Sessão de Notícias -->
+
+<article>
+  <div class="bloco">
+    <hr class="one">
+  <h2 class="tnt"> NOTÍCIAS E ÚLTIMAS ATUALIZAÇÕES </h2>
+    <hr class="two">
+  <br><br>
+  <center>
+      <div class="noticia">
+          <img class="nimg" src="img/nwow.png">
+          <br><br>
+          <p class="nt"> A ATUALIZAÇÃO DE CONTEÚDO 9.2.5 DE SHADOWLANDS JÁ ESTÁ DISPONÍVEL </p>
+      </div>
+      <div class="noticia">
+          <img class="nimg" src="img/ndi.png">
+          <br><br>
+          <p class="nt"> NOTAS DE PATCH DO BETA ABERTO PARA PC DE DIABLO IMMORTAL </p>
+      </div>
+      <div class="noticia">
+          <img class="nimg" src="img/ntes.png">
+          <br><br>
+          <p class="nt"> SKYRIM ANNIVERSARY EDITION CHEGA ACOMPANHADO DE UPADATE GRATUITO </p>
+      </div>
+    </center>
+  </div>
+</article>
+
+  <!-- World Of Warcraft -->
+<section id="content">
+  <article>
+    <div class="bloco1">
+    <img class="banner1" src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/GFPJZPVBG5U81606119674432.jpg">
+    </div>
+
+    <h3 class="titulo">World  Of  Warcraft</h3>
+
+    <div class="descricao">
+    É um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004. O jogo se passa no mundo fantástico de Azeroth, introduzido no primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.
+    </div>
+
+    <button class="btt" id="wow"> Saiba Mais </button>
+    <button class="ww"> Site Oficial </button>
+
+    <p class="bx"> Texto </p>
+  </article>
+</section>
+
+  <!-- Little Witch in the Woods -->
+<section id="content">
+  <article>
+    <div class="bloco1">
+    <img class="banner1" src="https://www.gamerguides.com/assets/guides/260/featured_pages/side_quests_header.jpg">
+    </div>
+
+    <h3 class="titulo"> Little Witch in the Woods </h3>
+
+    <div class="descricao">
+      É um RPG de fantasia de pixelart criado pelo estúdio sul-coreano "Sunny Side Up". O jogo completo foi lançado na Steam para os sistemas operacionais Microsoft Windows e Macintosh em 17 de maio de 2022.
+    </div>
+
+    <button class="btt" id="wow"> Saiba Mais </button>
+    <button class="ww"> Site Oficial </button>
+
+    <p class="bx"> Texto </p>
+  </article>
+</section>
+
+  <!-- Diablo Immortal -->
+<section id="content">
+  <article>
+    <div class="bloco1">
+    <img class="banner1" src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/9x/9XULV8GBOERT1596492129034.jpg">
+    </div>
+
+    <h3 class="titulo"> Diablo Immortal </h3>
+
+    <div class="descricao">
+      É um RPG de ação em desenvolvimento da série Diablo, projetado para multijogadores online nas plataformas móveis Android e iOS. Atualmente em desenvolvimento pela Blizzard Entertainment e NetEase, o jogo foi anunciado em 2018, sem data de lançamento definida.
+    </div>
+
+    <button class="btt" id="wow"> Saiba Mais </button>
+    <button class="ww"> Site Oficial </button>
+
+    <p class="bx"> Texto </p>
+  </article>
+</section>
+
+</body>
+</html>

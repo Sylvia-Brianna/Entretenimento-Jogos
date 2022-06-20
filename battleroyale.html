@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="battle.css">
+  <title>Battle royale</title>
+
+  <script src="script.js" defer></script>
+  <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+<!-- JQUERY DIV MOSTRAR/OCULTAR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('section#content article button.btt').click(function(){
+        $(this).siblings('p.bx').slideToggle();
+     });
+  });
+</script>  
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+<center>
+  <hr class="forma">
+  <header class="fundo">
+    <div class="box">
+        <nav class="btn btn-td">
+          <span><a class="cool-link" href="index.html"> INÍCIO </a></span>
+              </nav>
+            </div>
+          <div class="box">
+              <nav class="btn btn-td">
+                <span><a class="cool-link" href="terror.html"> HORROR SURVIVAL </a></span>
+              </nav>
+          </div>
+          <div class="logo"></div>
+          <div class="box">
+            <nav class="btn btn-td">
+              <span><a class="cool-link" href="battleroyale.html"> BATTLE ROYALE </a></span>
+            </nav>
+          </div>
+          <div class="box">
+            <nav class="btn btn-td">
+              <span><a class="cool-link" href="rpg.html"> ROLE-PLAYING </a></span>
+      </nav>
+    </div>
+    <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+        <label class="label" for="toggle-dark">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+    </header>
+  </center>
+ <!--MOSAICO IMAGENS-->
+
+ <div class="c-heroImageGrid">
+  <div class="container">
+    <div class="column"></div>
+    <div class="column">
+      <div class="row"></div>
+      <div class="row">
+        <div>
+          <div class="text">
+            <h6>
+              BATTLE ROYALE
+            </h6>
+            <p class="introducao">
+              Esse é o termo utilizado para definir os jogos eletrônicos que misturam elementos de sobrevivência e exploração. Os jogos desse genêro desafiam um grande número de jogadores, começando com um equipamento mínimo, a procurar armamento  para eliminar os outros oponentes, com um único objetivo: permancer vivo até o último instante.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </div>
+</div>
+
+ <!-- BLOCO DE NOTÍCIAS -->
+
+<article>
+  <div class="bloco">
+    <hr class="one">
+  <h2 class="tnt"> NOTÍCIAS E ATUALIZAÇÕES </h2>
+    <hr class="two">
+  <br><br>
+  <center>
+      <div class="noticia">
+          <img class="nimg" src="https://s2.glbimg.com/sOHl-151bBlRSFNrdKlxOlvExnI=/0x0:1728x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/V/R/iOGqgwRlOxSlWXcxmALQ/call-of-duty-black-ops.jpg">
+          <br><br>
+          <a class="ntxt" href="https://adrenaline.com.br/noticias/v/75972/jogos-da-serie-call-of-duty-podem-chegar-em-breve-ao-game-pass-rumor#:~:text=%2D%20Publicidade%20%2D-,Jogos%20da%20s%C3%A9rie%20Call%20of%20Duty%20podem,breve%20ao%20Game%20Pass%20%5BRUMOR%5D&text=Enquanto%20o%20processo%20de%20compra,reflexos%20podem%20surgir%20em%20breve"><p class="nt"> Jogos da série Call of Duty podem chegar em breve ao Game Pass </p></a>
+      </div>
+      <div class="noticia">
+          <img class="nimg" src="fnoticias.jpg">
+          <br><br>
+          <a class="ntxt" href="https://www.freefiremania.com.br/noticia/arraia-do-free-fire-2022-esta-de-volta-nesta-quarta-veja-o-calendario.html">
+          <p class="nt"> O Arraiá do Free Fire está de volta em 2022 a partir desta quarta-feira </p></a>
+      </div>
+      <div class="noticia">
+          <img class="nimg" src="https://webcdn.hirezstudios.com/paladins/wp-content/uploads/2019/12/SplashArt_Tiberius-1.jpg">
+          <br><br>
+          <a class="ntxt" href="https://mmorpgbr.com.br/paladins-vai-ter-um-grande-evento-de-colaboracao-com-a-animacao-rwby-neste-mes-de-junho-confira-o-trailer/">
+          <p class="nt"> Paladins vai ter um grande evento de colaboração com...  </p></a>
+      </div>
+    </center>
+  </div>
+</article>
+ 
+<!-- PRIMEIRO JOGO: FREE FIRE -->
+<section id="content">
+<article>
+  <div class="bloco1">
+  <img class="banner" src="img/Garenaff.jpg">
+  </div>
+
+  <h3 class="titulo">Free fire </h3>
+
+  <p class="descricao">Free Fire - Foi lançado no dia 23 de agosto de 2017. Criado pela desenvolvedora vietnamita 111dots Studio e publicado pela Garena.</p>
+
+  <button class="btt" id="ff"> Saiba Mais </button>
+  <button class="f"><a href="https://ff.garena.com/"> Site Oficial </a></button>
+
+    <p class="bx"> O principal diferencial do jogo é que pode ser jogado em uma variedade de aparelhos móveis, desde que tenha o sistema operacional Android ou iOS, sem exigir dispositivos muito potentes. O jogo possui também uma versão para computador através de emuladores. A maior delas é a Liga NFA (National Free Fire Association), campeonato brasileiro que é considerado um dos maiores torneios independentes de Free Fire do mundo. <br><br> 
+      Cada partida do jogo dura cerca de 10 minutos e te coloca em uma ilha para enfrentar 49 jogadores na luta pela sobrevivência. Os jogadores chegam ao mapa de avião e podem escolher quando saltar de paraquedas. Para sobreviver, permaneça na zona segura o máximo possível e explore o terreno ao máximo: dirija veículos rápidos, esconda-se nas trincheiras ou encontre seus oponentes no campo aberto. </p>
+</article>
+</section>
+
+<!-- SEGUNDO JOGO: CALL OF DUTY -->
+<section id="content">
+  <article>
+    <div class="bloco1">
+    <img class="banner" src="img/cod.jpg">
+    </div>
+  
+    <h3 class="titulo"> Call Of Duty </h3>
+  
+    <p class="descricao">A série de jogos de tiro em primeira pessoa foi criada pelo norte-americano Ben Chichoski em 2003. Os jogos da franquia vêm sendo publicados pela Activision e a maior parte foi desenvolvida por meio de um revezamento entre os estúdios Infinity Ward e Treyarch.</p>
+  
+    <button class="btt" id="ff"> Saiba Mais </button>
+    <button class="f"><a href="https://www.callofduty.com/br/pt/warzone/download%22%3E"> Site Oficial </a></button>
+  
+      <p class="bx"> Vanguard acompanha as operações de um grupo especializado em uma missão secreta para impedir um plano dos nazistas que poderia levá-los à vitória. O grupo é composto por cinco soldados: Arthur Kingsley, o líder; Polina Petrova, uma sniper russa; Wade Jackson, um piloto destemido; Lucas Riggs, especialista em demolição; e Richard Webb, estrategista e braço direito de Kingsley. Juntos eles lutarão em batalhas na Frente Oriental, Norte da África, Frente Ocidental e no Pacífico até eliminar os planos do Eixo. </p>
+  </article>
+  </section>
+  
+
+<!-- TERCEIRO JOGO: PALADINS -->
+<section id="content">
+  <article>
+    <div class="bloco1">
+    <img class="banner" src="https://pbs.twimg.com/media/DuhLus8X4AEGhPC.jpg">
+    </div>
+  
+    <h3 class="titulo"> Paladins </h3>
+  
+    <p class="descricao">É um jogo de tiro em primeira pessoa que envolve jogadores simultâneos, foi desenvolvido pelas empresas Hi Rez Studios e Evil Mojo Games o jogo foi lançado 17 de novembro de 2015 como closed beta.</p>
+  
+    <button class="btt" id="ff"> Saiba Mais </button>
+    <button class="f"><a href="https://www.callofduty.com/br/pt/warzone/download%22%3E"> Site Oficial </a></button>
+  
+      <p class="bx">O lançamento para o público em geral foi lançado em 16 de setembro de 2016. O jogo é
+        baseado em equipes de cinco jogadores, os quais competem por objetivos baseados em combate. O jogo é ambientado em mapas coloridos de fantasia, onde cada jogador escolhe um campeão que não pode se repetir no mesmo time e nem ser trocado na partida. Cada campeão tem suas próprias armas, habilidades e estilo de luta. O objetivo do jogo diferente de alguns outros do mesmo gênero, é marcar pontos através de tarefas específicas.</p>
+  </article>
+  </section>
+
+</body>
+</html>
