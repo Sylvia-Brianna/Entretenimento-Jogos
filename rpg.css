@@ -367,12 +367,12 @@ h6 {
 .nimg {
     height: 200px;
     width: 360px;
-    border: #494037 double 2px;
+    border: #494037 double 3px;
 }
 
 .nimg:hover {
-    border: #DAA520 double 2px;
-    transition: .4s;
+    border: #DAA520 double 3px;
+    transition: .6s;
 }
 
 .nt {

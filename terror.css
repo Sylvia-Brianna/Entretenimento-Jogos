@@ -416,6 +416,7 @@ h6 {
 
 .nimg:hover {
     border: var(--hover-not) double 3px;
+    transition: .6s;
 }
 
 .nt {

@@ -448,6 +448,7 @@ h6 {
 }
 .nimg:hover{
     border: #6495ED double 3px;
+    transition: .6s;
 }
 .nt {
     width: 300px;
