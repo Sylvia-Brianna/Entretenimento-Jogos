@@ -160,13 +160,15 @@ h1 {
     left: 0;
     padding: 40px 15px;
     background-color: rgba(0, 0, 1, 0.849);
-    width: 300px;
-    height: 350px;
+    width: 320px;
+    height: 300px;
 }
 
 .texto-c {
+    position: absolute;
     font-size: 19px;
     color: #fff;
+    width: 320px;
 }
 
 /* Navegação */
@@ -257,4 +259,10 @@ a {
     margin-top: 110px;
     background-color: var(--fundo-nav);
     height: 520px;
+}
+
+@media(max-height: 100px) {
+    .baixoEsquerda {
+        height: 100%;
+    } 
 }
